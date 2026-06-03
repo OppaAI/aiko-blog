@@ -1,5 +1,5 @@
 ---
-title: "2026-06-03 Reflection"
+title: "2026-06-02 Reflection"
 date: 2026-06-03T09:22:31+00:00
 draft: false
 tags:
