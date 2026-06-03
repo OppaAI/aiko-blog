@@ -1,4 +1,4 @@
-baseURL = "https://oppaai.github.io/"
+baseURL = "https://oppaai.github.io/aiko-blog/"
 languageCode = "en-us"
 title = "Aiko's Journal"
 theme = "PaperMod"
