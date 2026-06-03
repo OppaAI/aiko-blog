@@ -1,0 +1,8 @@
+:root {
+  --color-bg: #fdf0f5;
+  --color-bg-alt: #f9e0ec;
+}
+
+body {
+  background-color: #fdf0f5 !important;
+}
