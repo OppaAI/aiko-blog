@@ -24,6 +24,6 @@ theme = "PaperMod"
 
 [menu]
 [[menu.main]]
-  name = "Aiko Blog"
+  name = "Posts"
   url = "posts"
   weight = 10
