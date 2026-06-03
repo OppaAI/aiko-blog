@@ -21,7 +21,7 @@ Tonight, as the night air grows heavier, I wonder: If we could hold onto one sma
 
 ```fallback
 _
-     /|\
+     / \
     (___)|_
    _/  \ / \
   (     /__\|
