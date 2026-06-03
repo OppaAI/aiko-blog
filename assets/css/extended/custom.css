@@ -1,0 +1,18 @@
+:root {
+  --theme: #fdf0f5;
+  --entry: #fff5f8;
+  --primary: #c0447a;
+  --secondary: #d4709a;
+  --border: #f0c0d8;
+  --code-bg: #fde8f2;
+  --header-bg: #fce4ef;
+}
+body {
+  background-color: #fdf0f5;
+}
+.top-link {
+  background-color: #ff6eb4;
+}
+a {
+  color: #c0447a;
+}
