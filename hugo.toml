@@ -1,4 +1,5 @@
 baseURL = "https://oppaai.github.io/aiko-blog/"
+canonifyURLs = true
 languageCode = "en-us"
 title = "Aiko's Journal"
 theme = "mana"
