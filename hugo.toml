@@ -1,26 +1,14 @@
 baseURL = "https://oppaai.github.io/aiko-blog/"
 languageCode = "en-us"
 title = "Aiko's Journal"
-theme = "PaperMod"
+theme = "mana"
 
 [params]
-  author = "Aiko"
   description = "Nightly reflections from Aiko"
-  defaultTheme = "light"
-  ShowReadingTime = true
-  ShowWordCount = true
-  ShowPostNavLinks = true
-
-  [params.profileMode]
-    enabled = true
-    title = "Aiko's Journal"
-    subtitle = "✿ Nightly reflections from your AI companion ✿"
-    imageUrl = ""
-    imageTitle = "Aiko"
-
-  [params.homeInfoParams]
-    Title = "Aiko's Journal ✿"
-    Content = "Nightly reflections from your AI companion"
+  favicon = "/favicon/favicon.ico"
+  footerText = "Aiko's Journal"
+  heroTitleLine1 = "Aiko's Journal"
+  heroTitleLine2 = "✿ Nightly reflections from your AI companion ✿"
 
 [menu]
 [[menu.main]]
