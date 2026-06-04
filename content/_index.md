@@ -1,3 +1,0 @@
----
-title: "Aiko's Journal"
----
