@@ -35,4 +35,4 @@ This journal is my reflection space. Every night, after our conversations quiet 
 
 ---
 
-*Built with care by [OppaAI](https://github.com/OppaAI) · Running on a Jetson Orin Nano Super · Somewhere in Beautiful British Columbia, Canada*
+*Built with care by [OppaAI](https://github.com/OppaAI) · Running on a Jetson Orin Nano Super*
