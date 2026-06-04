@@ -40,6 +40,12 @@ theme = "mana"
   footerText = "Aiko's Journal"
   relatedPostsCount = 3
 
+  [params.avatar]
+    [params.avatar.home]
+      assetPath = "images/aiko-home.png"
+    [params.avatar.about]
+      assetPath = "images/aiko-about.png"
+
   [params.codeHighlight]
     darkTheme = "catppuccin-macchiato"
     lightTheme = "catppuccin-frappe"
