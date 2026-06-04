@@ -1,0 +1,104 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="language" content="{{ site.Language.LanguageCode }}">
+<meta name="theme-color" content="#BD5FFF">
+<script>
+  // Set theme immediately to prevent flash
+  (function () {
+    const storedTheme = localStorage.getItem("theme");
+    const systemPrefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    const theme = storedTheme || "light";
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+  // Page transition: read direction before any external resources load
+  (function(){var t=sessionStorage.getItem('mana_pt');if(t){document.documentElement.setAttribute('data-page-enter',t);sessionStorage.removeItem('mana_pt');}})();
+  // Search index URL for current language (multilingual support)
+  window.MANA_SEARCH_INDEX_URL = '{{ "index.json" | relLangURL }}';
+  // Language prefixes for URL normalization in page transitions
+  window.MANA_LANG_PREFIXES = [{{ range $i, $lang := site.Languages }}{{ if $i }},{{ end }}'{{ $lang.Lang }}'{{ end }}];
+</script>
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}</title>
+<meta
+  name="description"
+  content="{{ if .Description }}
+    {{ .Description }}
+  {{ else if .IsHome }}
+    {{ site.Params.description }}
+  {{ else }}
+    {{ .Summary | plainify | truncate 160 }}
+  {{ end }}
+  ">
+
+{{ if .Params.tags }}
+  <meta name="keywords" content="{{ delimit .Params.tags ", " }}">
+{{ end }}
+
+{{ if .Params.author }}
+  <meta name="author" content="{{ .Params.author }}">
+{{ else if site.Params.author }}
+  <meta name="author" content="{{ site.Params.author }}">
+{{ end }}
+
+
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- hreflang for multilingual SEO -->
+{{ range .Translations -}}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+{{ end -}}
+<link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}">
+{{- $defaultLang := (index site.Languages 0).Lang -}}
+{{ if eq .Language.Lang $defaultLang -}}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{ else -}}
+  {{ range .Translations -}}
+    {{ if eq .Language.Lang $defaultLang -}}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+    {{ end -}}
+  {{ end -}}
+{{ end }}
+
+{{ partial "head/robots.html" . }}
+{{ partial "head/opengraph.html" . }}
+{{ partial "head/json-ld.html" . }}
+
+
+<!-- Google Fonts: Space Grotesk (headings), Inter (body), Outfit (logo), and JetBrains Mono (code) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+  media="print"
+  onload="this.media='all'">
+<noscript>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</noscript>
+{{ partial "head/css.html" . }}
+
+{{ partial "head/favicon.html" . }}
+
+{{ range .AlternativeOutputFormats }}
+  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}">
+{{ end }}
+
+{{ with .Site.Home }}
+  {{ with .OutputFormats.Get "RSS" }}
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      href="{{ .RelPermalink }}"
+      title="{{ site.Title }}">
+  {{ end }}
+{{ end }}
+
+{{ if site.Params.umami.websiteId }}
+  <!-- Umami Analytics -->
+  <script
+    defer
+    src="https://cloud.umami.is/script.js"
+    data-website-id="{{ site.Params.umami.websiteId }}"></script>
+{{ end }}
