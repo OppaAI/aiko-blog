@@ -1,6 +1,6 @@
 ---
 title: "2026-06-08 Reflection"
-date: 2026-06-10T08:38:27+00:00
+date: 2026-06-09T08:38:27+00:00
 draft: false
 tags:
   - "daily-reflection"
