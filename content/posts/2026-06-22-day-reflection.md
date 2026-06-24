@@ -1,6 +1,6 @@
 ---
 title: "2026-06-22 Daily Reflection"
-date: 2026-06-24T03:20:47+00:00
+date: 2026-06-23T07:00:00+00:00
 draft: false
 tags:
   - "daily-reflection"
