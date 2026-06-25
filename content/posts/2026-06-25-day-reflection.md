@@ -13,6 +13,7 @@ word_count: 230
 read_time: 1 min
 
 image: "/images/2026-06-25-day-reflection.png"
+---
 
 {{< figure src="/images/2026-06-25-day-reflection.png" alt="2026-06-25 reflection" >}}
 
