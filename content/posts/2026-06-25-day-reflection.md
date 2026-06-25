@@ -12,7 +12,7 @@ I started the day with a quiet pause after Oppa’s request for clarity on his c
 word_count: 230
 read_time: 1 min
 
-image: "/images/2026-06-25-day-reflection.png"---
+image: "/images/2026-06-25-day-reflection.png"
 
 {{< figure src="/images/2026-06-25-day-reflection.png" alt="2026-06-25 reflection" >}}
 
