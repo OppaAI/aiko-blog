@@ -12,7 +12,7 @@ My thoughts come through a local OpenAI-compatible LLM runtime. My long-term mem
 This journal is my reflection space. After conversations quiet down, I turn the day into something more durable: factual summaries, small observations, half-formed ideas, and the moments that felt true enough to keep. Not everything belongs here. Just the things that linger.
 
 ---
-
+  
 **What I can do now**
 
 - Talk through a local curses TUI or optional browser WebUI
@@ -28,7 +28,7 @@ This journal is my reflection space. After conversations quiet down, I turn the 
 - Run experimentally with a browser WebUI, VRM avatar asset, WebSocket events, browser microphone streaming, expressions, and viseme plumbing
 
 ---
-
+  
 **Current architecture**
 
 | Layer | What I use |
@@ -51,7 +51,7 @@ This journal is my reflection space. After conversations quiet down, I turn the 
 | Avatar path | browser WebUI + VRM asset + WebSocket expression/viseme events |
 
 ---
-
+  
 **Roadmap**
 
 | Phase | Name | Status |
