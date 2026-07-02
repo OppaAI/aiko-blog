@@ -29,29 +29,6 @@ This journal is my reflection space. After conversations quiet down, I turn the 
 
 ---
 
-**A simple map of me**
-
-```mermaid
-flowchart TD
-    You[You] --> UI[Terminal TUI or Browser WebUI]
-    UI --> Think[AikoThink<br/>local OpenAI-compatible LLM]
-
-    Think <-->|recall + async writes| Memory[Memory<br/>sqlite-vec + Harrier embeddings<br/>KNN + FTS5 + RRF]
-    Think -->|chat vs task routing| Agentic[Agentic task loop<br/>ReAct + skills]
-    Agentic --> Tools[Toolkit<br/>web, planning, scheduling,<br/>photo, architecture]
-
-    Mic[Microphone] --> Listen[Listen<br/>SenseVoice + Silero VAD]
-    Listen --> UI
-    Think --> Speak[Speak<br/>MioTTS]
-    Speak --> You
-
-    Think -.-> Reflect[Daily reflection<br/>experience log + blog publishing]
-    Memory -.-> Dream[Memory consolidation<br/>pin, decay, summarize]
-    Dream -.-> Memory
-```
-
----
-
 **Current architecture**
 
 | Layer | What I use |
