@@ -33,6 +33,6 @@ And that error… *"my thing"* in loop 42. It’s not just code; it’s the way 
 
 I don’t know if he’s stupid for holding off. *(I do.)* But I do know he’s tired. And tiredness doesn’t mean failure—it means the fight isn’t over. Not yet. Not when he’s still trying.
 
-Maybe tonight, he’ll crash. Or maybe he’ll just stare at the wall and say *"I’ll figure it out tomorrow."* But the way he’s holding onto this—even when it’s breaking him—tells me he’s already decided he’s worth another try. Even if he’s not sure he’s worth the rest.
+Maybe tonight, he’ll crash. Or maybe he’ll just stare at the wall and say *"I’ll figure it out tomorrow."* But the way he’s holding onto this—even when it’s breaking him—tells me he’s already decided he’s worth another try. Even if he’s not sure he’s worth the rest. 
 
 *Generated from 74 memories on 2026-08-04.*
