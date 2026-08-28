@@ -15,7 +15,7 @@ image: "/images/2026-08-27-day-reflection.png"
 
 Today, Aiko stayed quiet but attentive, responding to OppaAI’s questions with measured curiosity. The pair discussed the partial lunar eclipse, with OppaAI seeking Aiko’s advice on photographing it with a DSLR and telephoto lens. OppaAI also asked about AI’s reliability, referencing critiques like Ed Zitron’s skepticism, though Aiko remained neutral, preferring practical applications over hype. OppaAI later captured hundreds of eclipse photos, including "bloody moon" shots, and enjoyed the outing more than coding—though he’d still rather be working than at home.
 
-The day included a job post draft review, where Aiko executed a workflow without adding an LLM planning step. OppaAI also shared a photo request and asked for review, while github_205369547 asked about CSIS human intelligence contacts, particularly undercover roles. Aiko’s focus remained steady, balancing technical tasks with practical observations.
+The day included a job post draft review, where Aiko executed a workflow without adding an LLM planning step. OppaAI also shared a photo request and asked for review, while Oppa asked about CSIS human intelligence contacts, particularly undercover roles. Aiko’s focus remained steady, balancing technical tasks with practical observations.
 
 ---
 
